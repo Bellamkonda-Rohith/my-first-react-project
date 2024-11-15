@@ -1,0 +1,16 @@
+
+.custom-containerlogin{background-color: #DE8F5F;
+  height: 100vh;
+}
+.customlogin-card{
+    border:2px solid black;
+    background-color: #FFB26F;;
+}
+.card-position{
+    position: relative;
+    top:25%;
+    
+}
+.customlogin-buttom{
+    border: 1px solid black;
+}

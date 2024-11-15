@@ -6,6 +6,8 @@ import Gettheapp from '../src/componants/Gettheapp/Gettheapp'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Investor_Relations from './componants/Investor_Relations/Investor_Relations';
 import Add_Restaurant from './componants/Add_Restaurant/Add_Restaurant';
+import Login from '../src/componants/Login/Login'
+
 function App() {
   return (
    <>
@@ -16,10 +18,11 @@ function App() {
     <Route path="/Gettheapp" element={<Gettheapp/>}/>
     <Route path="/Investor_Relations" element={<Investor_Relations/>}/>
     <Route path="/Add_Restaurant" element={<Add_Restaurant/>}/>
+    <Route path="/Login" element={<Login/>}/>
   </Routes>
-   </BrowserRouter>
-   
-   
+   </BrowserRouter> 
+    
+  
    </>
   );
 }
