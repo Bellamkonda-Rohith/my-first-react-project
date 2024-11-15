@@ -1,0 +1,61 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    
+    
+}
+.navbar-menu{
+    display: flex;
+}
+.navbar-menu li{
+    display: inline;
+    justify-content: space-around;
+    padding-right: 82px;
+    text-decoration: none;color: white;
+}
+.background-img{
+    background-image: url('../Navbar/zomatobackground.jpg');
+    height:462px;
+}
+.custom-brand-img{
+    width: 300px;
+    margin-top:55px ;
+}
+.navbar-brand{
+    margin-left:30px;
+    color: white;
+}
+.custom-h1-navbar{
+    color: white;
+    margin-top: 20px;
+}
+.custom-serch-section{
+    margin-top:  40px;
+}
+.custom-dropdown{
+    padding-right: 10px;
+  margin-right: 10px;
+  width: 183px;
+  background: white;
+  color: black;
+}
+.custom-button{
+    background-color: white;
+    color: black;
+}
+.custom-contiainer{
+    background: white;
+  width: 485px;
+  border-radius: 2px;
+
+}
+.custom-input{
+    width:325px;
+}
+.custom-link{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}

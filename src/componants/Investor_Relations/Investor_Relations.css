@@ -1,0 +1,44 @@
+.main-container{
+    background-color:rgb(226, 55, 68);
+}
+.custom-brandlogo{
+    width:100px;
+}
+.custom-navlist{
+    display: flex;
+    margin-top: 19px;
+}
+.custom-navbar{
+    display: flex;
+   justify-content:space-around;
+    align-items: center;
+  
+}
+.customlist-items{
+    display: inline;
+    padding-left: 30px;
+}
+.custom-img-logo{
+    width: 110px;
+}
+.custom-hr{
+    width: 585px;
+    color: azure;
+}
+.custom-img-freedindialogo{
+    width: 159px;
+}
+.custom-container{
+    background: white;
+  border-radius: 80px;
+}
+.presentationimg{
+    width: 36px;
+}
+.custom-container-overview{
+    display: flex;
+}
+.custom-imgs{
+    width:30px;
+}
+.custom-border{ border-radius: 80px;}
