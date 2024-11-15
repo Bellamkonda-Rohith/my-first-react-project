@@ -19,7 +19,7 @@ export default function Navbar() {
                 <img src={zomatobrand} className="custom-brand-img" alt="..." />
 
             </div>
-            <div class="d-flex justify-content-center"><h1 className="custom-h1-navbar">Discover the best food & drinks in Chhindwara</h1></div>
+            <div class="d-flex justify-content-center"><h1 className="custom-h1-navbar dm-serif-text-regular">Discover the best food & drinks in Chhindwara</h1></div>
            <div className="container custom-contiainer">
            <div class="d-flex justify-content-center custom-serch-section"><div class="dropdown custom-dropdown">
                 <button class="btn custom-button dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
