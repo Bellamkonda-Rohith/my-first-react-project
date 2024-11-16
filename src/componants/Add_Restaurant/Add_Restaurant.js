@@ -1,24 +1,29 @@
 import React from "react";
- import zomatologo from '../Add_Restaurant/zomatologoback.png'
+import zomatologo from '../Add_Restaurant/zomatologoback.png'
 import '../Add_Restaurant/Add_Restaurant.css'
-import Add_Restaurant_logo from '../Add_Restaurant/addrestaurant.png'
- export default function Add_Restaurant(){
-    return(
+import Add_Restaurant_background from '../Add_Restaurant/Add_a_restaurant.avif'
+export default function Add_Restaurant() {
+    return (
         <>
+        <div className="background-img-for-add-restaurent ">
+
+
+        <img src={Add_Restaurant_background}class="img-fluid custom-addrestarunt-img" alt="restarund"/>
         <header>
-            <img src={zomatologo} alt="zommatologo" className="custom-logo"/>
-        </header>
-       {/* <div className="container"> */}
-       <div class="d-flex justify-content-center">
-            <img src={Add_Restaurant_logo} className="custom-addrestarentlogo"/>
+                <h1 className="text-center h1-customposition1 kanit-extrabold">Partner with Zomato</h1>
+                <h1 className="text-center  h1-customposition2 kanit-extrabold">and grow your business</h1>
+                <p className="text-center p-customposition3">0% commission for the 1st month
+                    for new restaurant partners in selected cities
+                </p>
+                <buttom className="btn  custom-buttom-register-restaurant">
+                    Register Your Restaurant
+                </buttom>
+            </header>
         </div>
-        <div class="d-flex justify-content-center">
-          <button className="bg-primary custom-buttom mt-4"> Login</button>
-        </div>
-        <div class="d-flex justify-content-center">
-           <button className="custom-buttom mt-3">Register</button>
-        </div>
-       {/* </div> */}
+            
+       
+
+        
 
         </>
     )

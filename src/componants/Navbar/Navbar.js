@@ -15,7 +15,7 @@ export default function Navbar() {
                     
                     </li>
 
-                    <li>Signup</li>
+                    <li><Link to="/Signup" className="custom-link">Signup</Link></li>
                 </ul>
             </header>
             <div class="d-flex justify-content-center">

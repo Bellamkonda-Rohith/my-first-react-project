@@ -1,0 +1,14 @@
+.customsignup-card{
+    width: 336px;
+    position: relative;
+    top: 20%;
+    left: 34%;
+
+}
+.custom-signupcontainer{
+    height: 100vh;
+    background-color: rgb(239, 79, 95);
+}
+.custom-buttonsihnup{
+    width:100%;
+}

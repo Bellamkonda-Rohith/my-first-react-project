@@ -1,12 +1,51 @@
-.custom-logo{
-    width: 110px;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.background-img-for-add-restaurent{
+    position: relative;
+    height: 845px;
+    width: 100%;
 }
-.custom-addrestarentlogo{
-    width: 341px;
-    height: 250px;
+
+.custom-addrestarunt-img{
+   
+    position: relative;
+  height: 200%;
+  width: 200%;
+  bottom: 23%;
+
+    
 }
-.custom-buttom{
-    width: 341px;
-    height:40px;
-    border-radius: 10px;
+
+.h1-customposition1{
+    top: 11%;
+    position: absolute;
+    left: 35%;
+  }
+
+.h1-customposition2{
+    position: absolute;
+    top:19%;
+    left: 33%;
+}
+.p-customposition3{
+    position: absolute;
+    top: 28%;
+    left: 28%;
+  }
+.custom-buttom-register-restaurant{
+    position: absolute;
+    top: 36%;
+    left: 39%;
+    background: white;
+  border: 1px solid tomato;
+  
+}
+.kanit-extrabold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+.custom-buttom-register-restaurant:hover{
+    background-color: tomato;
+    transition:scale(1.05) ;
 }
