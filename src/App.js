@@ -11,6 +11,7 @@ import Signup from './componants/Signup/Signup';
 import Explore_options_near_me from './componants/Firstpage/Explore_options_near_me';
 import Footer from './componants/Firstpage/Footer';
 import Cards from './componants/Firstpage/cards';
+import Collections from './componants/Firstpage/Collections/Collections';
 
 function HomePage() {
   return (
@@ -18,6 +19,7 @@ function HomePage() {
     
     <Navbar/>
     <Cards/>
+    <Collections/>
     <Gettheapp/>
     <Explore_options_near_me/>
     <Footer/>
