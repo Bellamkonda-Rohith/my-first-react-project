@@ -8,24 +8,42 @@ import Investor_Relations from './componants/Investor_Relations/Investor_Relatio
 import Add_Restaurant from './componants/Add_Restaurant/Add_Restaurant';
 import Login from '../src/componants/Login/Login';
 import Signup from './componants/Signup/Signup';
+import Explore_options_near_me from './componants/Firstpage/Explore_options_near_me';
+import Footer from './componants/Firstpage/Footer';
+import Cards from './componants/Firstpage/cards';
+
+function HomePage() {
+  return (
+    <>
+    
+    <Navbar/>
+    
+    <Gettheapp/>
+    <Explore_options_near_me/>
+    <Footer/>
+    </>
+
+  );
+}
+
 
 function App() {
   return (
-   <>
-   <BrowserRouter>
+    <>
+<BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
 
-  <Routes>
-    <Route path="/" element={<Navbar/>}/>
-    <Route path="/Gettheapp" element={<Gettheapp/>}/>
-    <Route path="/Investor_Relations" element={<Investor_Relations/>}/>
-    <Route path="/Add_Restaurant" element={<Add_Restaurant/>}/>
-    <Route path="/Login" element={<Login/>}/>
-    <Route path="/Signup" element={<Signup/>}/>
-  </Routes>
-   </BrowserRouter> 
-    
-  
-   </>
+          <Route path="/Gettheapp" element={<Gettheapp />} />
+         <Route path="/Investor_Relations" element={<Investor_Relations />} />
+          <Route path="/Add_Restaurant" element={<Add_Restaurant />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Signup" element={<Signup />} />
+        </Routes>
+      </BrowserRouter>
+{/* <Cards/> */}
+
+    </>
   );
 }
 
