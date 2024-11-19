@@ -17,7 +17,7 @@ function HomePage() {
     <>
     
     <Navbar/>
-    
+    <Cards/>
     <Gettheapp/>
     <Explore_options_near_me/>
     <Footer/>
