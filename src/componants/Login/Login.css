@@ -1,15 +1,13 @@
 
-.custom-containerlogin{background-color: rgb(239, 79, 95);
-  height: 100vh;
-}
 .customlogin-card{
     border:2px solid none;
     background-color: white;
-    /* background-color: rgb(239, 79, 95); */
+     background-color: rgb(239, 79, 95); 
 }
 .card-position{
-    position: relative;
+    position: absolute;
     top:25%;
+    left: 39%;
     
 }
 .customlogin-buttom{

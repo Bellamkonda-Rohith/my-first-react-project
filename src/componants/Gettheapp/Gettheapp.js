@@ -7,7 +7,7 @@ export default function Gettheapp() {
     return (
         <>
             <div class="d-flex justify-content-center">
-                <img src={zomatologoblack} className="custom-img mt-5" />
+                <img src={zomatologoblack} className="custom-img-zomatobrandlogo mt-5" />
             </div>
 
             <div className="container">
