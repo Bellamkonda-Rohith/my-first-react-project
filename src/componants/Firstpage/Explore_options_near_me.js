@@ -2,39 +2,27 @@ import React from "react";
 import '../Firstpage/Explore_options_near_me.css'
 
 export default function Explore_options_near_me() {
-    return (
-        <>
-            <h1>Explore options near me</h1>
-            <div className="card">
-                <div className="card-title">
-                    Popular Cuisines Near Me
-                </div>
-                <div className="card-body">
-                    <ul className="custom-list-nearme">
-                        <li>Beverages near me</li>
-                        <li>Biryani near me</li>
-                        <li>Burger near me</li>
-                        <li>Cafe near me</li>
-                        <li>Chinese near me</li>
-                        <li>Coffee near me</li>
-                        <li>Desserts near me</li>
-                        <li>Ice Cream near me</li>
-                        <li>Italian near me</li>
-                        <li>Momos near me</li>
-                        <li>Mughlai near me</li>
-                        <li>North Indian near me</li>
-                        <li>Pasta near me</li>
-                        <li>Pizza near me</li>
-                        <li>Rolls near me</li>
-                        <li>Sandwich near me</li>
-                        <li>Shake near me</li>
-                        <li>South Indian near me</li>
-                        <li>Street near me</li>
-                        <li>Tea near me</li>
-                    </ul>
-
+    const Explore_options_near_me_cards = [
+        { card_details: "Popular Cuisines Near Me" },
+        { card_details: "Popular Restaurant Types Near me" },
+        { card_details: "Top Restaurant Chains" },
+        { card_details: "Cities We Deliver To" }
+    ]
+   return( 
+   <>
+   <div className="container">
+   <div className="row">
+        {Explore_options_near_me_cards.map((copyof_explore_near_me)=>
+        (
+            <div className="col-12">
+                <div className="card mt-4 px-4 py-4 shadow-lg">
+                    <div className="card-title"><h4>{copyof_explore_near_me.card_details}</h4></div>
                 </div>
             </div>
-        </>
-    );
-};
+        )
+        )}
+    </div>
+   </div>
+   </>
+   )
+}

@@ -12,6 +12,9 @@ import Explore_options_near_me from './componants/Firstpage/Explore_options_near
 import Footer from './componants/Firstpage/Footer';
 import Cards from './componants/Firstpage/cards';
 import Collections from './componants/Firstpage/Collections/Collections';
+import Popular_localities from './componants/Firstpage/Popular_lolalities/Popular_localites';
+import Top_trending_places from './componants/Top_trending_places/Top_trending_places';
+import Hero_top_trending from './componants/Top_trending_places/Hero_top_trending/Hero_top_trending';
 
 function HomePage() {
   return (
@@ -19,11 +22,14 @@ function HomePage() {
     
     <Navbar/>
     <Cards/>
-    <Collections/>
+   <Collections/>
+   <Hero_top_trending/>
+   <Top_trending_places/>
+    <Popular_localities/>
     <Gettheapp/>
     <Explore_options_near_me/>
     <Footer/>
-    </>
+     </> 
 
   );
 }
@@ -43,7 +49,6 @@ function App() {
           <Route path="/Signup" element={<Signup />} />
         </Routes>
       </BrowserRouter>
-{/* <Cards/> */}
 
     </>
   );

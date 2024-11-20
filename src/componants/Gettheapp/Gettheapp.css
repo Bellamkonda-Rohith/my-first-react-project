@@ -6,8 +6,10 @@
     margin-left: 94px;
   margin-top: 134px;
 }
-
-
+.custom-img-phones:hover {
+  width: 450px;
+  height: 460px;
+}
    
 .custom-label{
     margin-left: 30px;

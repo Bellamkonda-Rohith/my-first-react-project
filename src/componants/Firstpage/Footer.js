@@ -1,66 +1,73 @@
 import React from "react";
 
-  function Footer(){
-    return (
-        <>
-            <div className="container">
-                <div className="row">
-                    <div className="col-2">
-                       
-                        <ul className="list-unstyled">
-                        <h5 className="fw-bold">AboutMe</h5>
-                            {/* <li className="fw-bold list-unstyled">About Zomato</li> */}
-                            <li>Who We Are</li>
-                            <li>Blog</li>
-                            <li>Work With Us</li>
-                            <li>Investor Relations</li>
-                            <li>Report Fraud</li>
-                            <li>Press Kit</li>
-                            <li>Contact Us</li>
-                        </ul>
-
-                    </div>
-                    <div className="col-2">
-                        <ul className="list-unstyled ">
-                           <h5 className="fw-bold"> Zomaverse</h5>
-                            <li>Zomato</li>
-                            <li>Blinkit</li>
-                            <li>District</li>
-                            <li>Feeding India</li>
-                            <li>Hyperpure</li>
-                            <li>Zomato Live</li>
-                            <li>Zomaland</li>
-                            <li>Weather Union</li>
-                        </ul>
-
-                    </div>
-                    <div className="col-2">
-                    <ul className="list-unstyled">
-                            <li  className="fw-bold list-unstyled">For Restaurants</li>
-                            <li>Partner With Us</li>
-                            <li>Apps For You</li>
-                        </ul>
-
-                    </div>
-                    <div className="col-3">
-                    <ul className="list-unstyled ">
-                            <li  className="fw-bold list-unstyled ms-1">Learn More</li>
-                            <li>Privacy</li>
-                            <li>Security</li>
-                            <li>Terms</li>
-                        </ul>
-
-                    </div>
-                    <div className="col-3">
-                       <li className="fw-bold list-unstyled ms-1">Social Links</li>
-                    </div>
 
 
-                </div>
+function Footer() {
+  const footerlist = [
+    {
+      heading: "About Zomato",
+      list: [
+        "Who We Are",
+        "Blog",
+        "Work With Us",
+        "Investor Relations",
+        "Report Fraud",
+        "Press Kit",
+        "Contact Us",
+      ],
+    },
+    {
+      heading: "Zomaverse",
+      list: [
+        "Zomato",
+        "Blinkit",
+        "District",
+        "Feeding India",
+        "Hyperpure",
+        "Zomato Live",
+        "Zomaland",
+        "Weather Union",
+      ],
+    },
+    {
+      heading: "For Restaurants",
+      list: ["Partner With Us", "Apps For You"],
+    },
+    {
+      heading: "Learn More",
+      list: ["Privacy", "Security", "Terms"],
+    },
+    {
+      heading: "Socialmedia",
+      list: ["Linkedin", "Facebook", "Instagram"],
+    },
+  ];
 
 
+  return (
+    <div className="container-fluid shadow-lg">
+      <div className="row">
+        {footerlist.map((copyoffooterlist, index) => (
+          <div className=" col-2 mb-4 ms-4 mt-5 shadow-none" key={index}>
+            <div className="card border-0 shadow-sm ms-4">
+              <div className="card-title  text-dark border-0">
+                <h5>{copyoffooterlist.heading}</h5>
+              </div>
+              <ul className="list-unstyled list-group card-body">
+                {copyoffooterlist.list.map((copyoflistinsidethelist, i) =>
+                (
+                  <li className="card-body">{(copyoflistinsidethelist)}</li>
+                )
+                )}
+              </ul>
             </div>
-        </>
-    );
-};
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+
+
 export default Footer;

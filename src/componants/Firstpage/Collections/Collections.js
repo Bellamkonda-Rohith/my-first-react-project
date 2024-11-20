@@ -34,7 +34,7 @@ export default function Collections() {
          <div className="row">
                 {colections_imges.map((copyofimages, index) =>
                 (<div className="col-3"key={index}>
-                    <div class="card bg-dark text-white">
+                    <div class="card bg-dark text-white custom-card-forhover">
                         <img src={copyofimages.image_collection} class="card-img" alt="..." />
                         <div class="card-img-overlay  text-arrangement">
                             <h5 class="card-title">{copyofimages.card_title}</h5>
