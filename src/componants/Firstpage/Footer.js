@@ -56,7 +56,7 @@ function Footer() {
               <ul className="list-unstyled list-group card-body">
                 {copyoffooterlist.list.map((copyoflistinsidethelist, i) =>
                 (
-                  <li className="card-body">{(copyoflistinsidethelist)}</li>
+                  <li className="mt-2">{(copyoflistinsidethelist)}</li>
                 )
                 )}
               </ul>
