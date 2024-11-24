@@ -45,14 +45,21 @@ function Footer() {
 
 
   return (
-    <div className="container-fluid shadow-lg">
+    <div className="container-fluid mt-5">
       <div className="row">
-        {footerlist.map((copyoffooterlist, index) => (
-          <div className=" col-2 mb-4 ms-4 mt-5 shadow-none" key={index}>
+        <div className="container">
+          <h1 className="ms-5">Zomato</h1>
+        </div>
+        {footerlist.map((copyoffooterlist, index) =>{ 
+          const {heading,list}=copyoffooterlist
+          return(
+          <div className="    col-12 col-sm-6 col-md-4 col-lg-2 mb-4 ms-4 mt-5 shadow-none" key={index}>
             <div className="card border-0 shadow-sm ms-4">
               <div className="card-title  text-dark border-0">
-                <h5>{copyoffooterlist.heading}</h5>
+                <h5>{heading}</h5>
               </div>
+             
+             
               <ul className="list-unstyled list-group card-body">
                 {copyoffooterlist.list.map((copyoflistinsidethelist, i) =>
                 (
@@ -62,7 +69,7 @@ function Footer() {
               </ul>
             </div>
           </div>
-        ))}
+        )})}
       </div>
     </div>
   );

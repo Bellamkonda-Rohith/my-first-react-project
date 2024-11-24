@@ -28,23 +28,26 @@ export default function Collections() {
     ]
     return (
         <>
-         <div className="container mt-5">
+         <div className="container  custom-collections-container">
             <h1>Collections</h1>
             <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Hyderabad, based on trends</p>
          <div className="row">
                 {colections_imges.map((copyofimages, index) =>
-                (<div className="col-3"key={index}>
-                    <div class="card bg-dark text-white custom-card-forhover">
-                        <img src={copyofimages.image_collection} class="card-img" alt="..." />
+               {
+                const {card_title,card_text,image_collection}=copyofimages
+                return(<div className="  col-12 col-sm-8 col-md-6 col-lg-3"key={index}>
+                    <div class="card bg-dark text-white custom-card-forhover custom-collections-card">
+                        <img src={image_collection} class="card-img" alt="..." />
                         <div class="card-img-overlay  text-arrangement">
-                            <h5 class="card-title">{copyofimages.card_title}</h5>
-                            <p class="card-text">{copyofimages.card_text}</p>
+                            <h5 class="card-title">{card_title}</h5>
+                            <p class="card-text">{card_text}</p>
 
                         </div>
                     </div>
 
                     </div>
-                ))}
+                )
+               })}
                 </div>
          </div>
                </>

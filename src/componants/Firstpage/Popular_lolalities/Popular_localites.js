@@ -47,8 +47,8 @@ export default function Popular_localities() {
                 <div className="row">
                 {popular_localities.map((copyofpopular_localities, index) =>
                 (
-                    <div className="col-4 mt-2 custom-width" key={index}>
-                        <div className="card custom-card-width shadow-lg">
+                    <div className="   col-12 col-sm-10 col-md-6 col-lg-4 mt-2 custom-width" key={index}>
+                        <div className="card custom-card-width shadow">
                             
                             <div className="card-body">
                             <h5>{copyofpopular_localities.location}</h5> 

@@ -4,6 +4,13 @@
     justify-content: flex-end;
 }
 .custom-card-forhover:hover{
- width:275px;
- height: 273px;
+ width:270px;
+ transition: 0.5s;
+}
+.custom-collections-container{
+    margin-top: 100px;
+}
+.custom-collections-card{
+    margin-top:50px;
+    width:250px;
 }

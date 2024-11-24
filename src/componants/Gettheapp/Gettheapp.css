@@ -2,9 +2,7 @@
     width: 140px;
 }
 .custom-img-phones{
-    width: 410px;
-    margin-left: 94px;
-  margin-top: 134px;
+   width: 100%;
 }
 .custom-img-phones:hover {
   width: 450px;

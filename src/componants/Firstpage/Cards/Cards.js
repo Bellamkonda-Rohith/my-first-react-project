@@ -1,7 +1,7 @@
 import React from "react";
 
-import "../Firstpage/cards.css"
-export default function cards() {
+import "../Cards/Cards.css"
+export default function Cards() {
 
     const card_details = [{
         card_title: "Order Online",
@@ -28,17 +28,19 @@ export default function cards() {
 
     return (
         <>
-            <div className="container mt-5">
+            <div className="container mt-3">
                 <div className="row">
                     {card_details.map((copyofcard_details => 
-                       { return (
-                            <div className="col-4">
-                                <div className="card img-cutom-card">
-                                    <img src={copyofcard_details.image} className="custom-img-size" />
+                       { 
+                        const{card_title,card_paragraph,image}=copyofcard_details
+                        return (
+                            <div className="col-12 col-sm-8 col-md-6 col-lg-4 ">
+                                <div className="card img-cutom-card-fitrst3 ">
+                                    <img src={image} className="custom-img-size-firstthree" />
 
                                     <div className="card-body">
-                                        <div className="card-title"><h4>{copyofcard_details.card_title}</h4></div>
-                                        <p>{copyofcard_details.card_paragraph}</p>
+                                        <div className="card-title"><h4>{card_title}</h4></div>
+                                        <p>{card_paragraph}</p>
 
                                     </div>
                                 </div>

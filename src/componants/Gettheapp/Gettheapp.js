@@ -13,14 +13,14 @@ export default function Gettheapp() {
             <div className="container">
                 <div className="row">
 
-                    <div className="col-6">
+                    <div className=" col-12 col-sm- 10 col-md-8 col-lg-6">
                         <div className="container">
                             <img src={zomatophones} className="custom-img-phones" />
                         </div>
 
                     </div>
 
-                    <div className="col-6">
+                    <div className="col-12 col-sm- 10 col-md-8 col-lg-6">
                         <div className="container custom-container-getheapp">
                             <h1>Get the Zomato App</h1>
                             <p className="mt-5">We will send you a link, open it on your phone to download the app</p>

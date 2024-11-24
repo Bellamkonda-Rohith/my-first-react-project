@@ -76,7 +76,7 @@ export default function Top_trending_places(){
       <div className="row">
             {Top_trending_places_details.map((copyoftop_trending_places)=>
             (
-                <div className="col-3 mt-5">
+                <div className=" col-12 col-sm-4 col-md-6 col-lg-3 mt-5">
                    
                     <div className="card rounded custom-images-top-trending ">
                     <img src={copyoftop_trending_places.image} className="rounded" />
