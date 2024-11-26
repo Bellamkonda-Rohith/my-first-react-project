@@ -30,11 +30,32 @@ export default function Cards() {
         <>
             <div className="container mt-3">
                 <div className="row">
-                    {card_details.map((copyofcard_details => 
-                       { 
+                    {card_details.map((copyofcard_details,index)=>{
+                        const {card_title,card_paragraph,image}=copyofcard_details;
+                        return(
+                            <div className="col-12 col-sm-8  col-md-6 col-lg-4  "key={index}>
+                                <div className="card img-cutom-card-fitrst3 ">
+                                    <img src={image} className="custom-img-size-firstthree" />
+
+                                    <div className="card-body">
+                                        <div className="card-title"><h4>{card_title}</h4></div>
+                                        <p>{card_paragraph}</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        )
+                    })}
+
+
+
+
+                    {/* {card_details.map((copyofcard_details => 
+                       
                         const{card_title,card_paragraph,image}=copyofcard_details
                         return (
-                            <div className="col-12 col-sm-8 col-md-6 col-lg-4 ">
+                            <div className="col-12 col-sm- col-md-6 col-lg-4 ">
                                 <div className="card img-cutom-card-fitrst3 ">
                                     <img src={image} className="custom-img-size-firstthree" />
 
@@ -49,7 +70,7 @@ export default function Cards() {
                     }
 
                     ))
-                    }
+                    } */}
 
 
                 </div>

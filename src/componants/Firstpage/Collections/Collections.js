@@ -35,7 +35,7 @@ export default function Collections() {
                 {colections_imges.map((copyofimages, index) =>
                {
                 const {card_title,card_text,image_collection}=copyofimages
-                return(<div className="  col-12 col-sm-8 col-md-6 col-lg-3"key={index}>
+                return(<div className="col-12 col-sm-8 col-md-6 col-lg-3"key={index}>
                     <div class="card bg-dark text-white custom-card-forhover custom-collections-card">
                         <img src={image_collection} class="card-img" alt="..." />
                         <div class="card-img-overlay  text-arrangement">
